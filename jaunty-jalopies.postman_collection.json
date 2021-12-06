@@ -1,0 +1,1193 @@
+{
+	"info": {
+		"_postman_id": "6ea94ed0-6b2a-4143-bc37-b6f0b40adb88",
+		"name": "jaunty-jalopies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"bk\",\n    \"password\":\"pass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Criteria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vehicles?modelYear=2019&color=Red&modelName=Flying Spur",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles"
+					],
+					"query": [
+						{
+							"key": "modelYear",
+							"value": "2019"
+						},
+						{
+							"key": "color",
+							"value": "Red"
+						},
+						{
+							"key": "modelName",
+							"value": "Flying Spur"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/reports"
+			},
+			"response": [
+				{
+					"name": "Get All Reports",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/reports"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 21 Nov 2021 06:33:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        {\n            \"color\": \"Aluminum\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Beige\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Black\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Blue\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Bronze\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Brown\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Claret\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Copper\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Cream\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Gold\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Gray\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Green\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Maroon\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Metallic\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Navy\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Orange\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Pink\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Purple\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Red\",\n            \"monthly_sales_count\": 1,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"color\": \"Rose\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Rust\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Silver\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"color\": \"Tan\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"Turquoise\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        },\n        {\n            \"color\": \"White\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"color\": \"Yellow\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 0,\n            \"all_time_sales_count\": 0\n        }\n    ],\n    [\n        {\n            \"vehicle_type\": \"Car\",\n            \"monthly_sales_count\": 1,\n            \"year_sales_count\": 7,\n            \"all_time_sales_count\": 7\n        },\n        {\n            \"vehicle_type\": \"Convertible\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"vehicle_type\": \"SUV\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"vehicle_type\": \"Truck\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"vehicle_type\": \"Van\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        }\n    ],\n    [\n        {\n            \"manufacturer_name\": \"Acura\",\n            \"monthly_sales_count\": 1,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"manufacturer_name\": \"Audi\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 3,\n            \"all_time_sales_count\": 3\n        },\n        {\n            \"manufacturer_name\": \"Bentley\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"manufacturer_name\": \"BMW\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"manufacturer_name\": \"Ferrari\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 2,\n            \"all_time_sales_count\": 2\n        },\n        {\n            \"manufacturer_name\": \"Alfa Romeo\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"manufacturer_name\": \"Chevrolet\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        },\n        {\n            \"manufacturer_name\": \"Ford\",\n            \"monthly_sales_count\": 0,\n            \"year_sales_count\": 1,\n            \"all_time_sales_count\": 1\n        }\n    ],\n    [\n        {\n            \"customerID\": \"6\",\n            \"customer_name\": \"ellaf\",\n            \"first_sale_or_repair_start_date\": \"2020-12-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-10-01\",\n            \"gross_income\": 260500,\n            \"num_of_sales\": 3,\n            \"num_of_repairs\": 1\n        },\n        {\n            \"customerID\": \"7\",\n            \"customer_name\": \"georgef\",\n            \"first_sale_or_repair_start_date\": \"2021-02-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-07-01\",\n            \"gross_income\": 185400,\n            \"num_of_sales\": 1,\n            \"num_of_repairs\": 1\n        },\n        {\n            \"customerID\": \"4\",\n            \"customer_name\": \"applebee\",\n            \"first_sale_or_repair_start_date\": \"2020-12-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-10-01\",\n            \"gross_income\": 135500,\n            \"num_of_sales\": 3,\n            \"num_of_repairs\": 1\n        },\n        {\n            \"customerID\": \"1\",\n            \"customer_name\": \"poppywu\",\n            \"first_sale_or_repair_start_date\": \"2021-02-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-11-20\",\n            \"gross_income\": 90850,\n            \"num_of_sales\": 2,\n            \"num_of_repairs\": 2\n        },\n        {\n            \"customerID\": \"3\",\n            \"customer_name\": \"Moon Enterprises\",\n            \"first_sale_or_repair_start_date\": \"2021-01-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-02-05\",\n            \"gross_income\": 57260,\n            \"num_of_sales\": 2,\n            \"num_of_repairs\": 2\n        },\n        {\n            \"customerID\": \"5\",\n            \"customer_name\": \"carold\",\n            \"first_sale_or_repair_start_date\": \"2021-02-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-02-05\",\n            \"gross_income\": 50700,\n            \"num_of_sales\": 1,\n            \"num_of_repairs\": 1\n        },\n        {\n            \"customerID\": \"2\",\n            \"customer_name\": \"laweenpiromari\",\n            \"first_sale_or_repair_start_date\": \"2020-12-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-03-01\",\n            \"gross_income\": 45120,\n            \"num_of_sales\": 1,\n            \"num_of_repairs\": 1\n        },\n        {\n            \"customerID\": \"9\",\n            \"customer_name\": \"jimmyk\",\n            \"first_sale_or_repair_start_date\": \"2021-09-01\",\n            \"recent_sale_or_repair_start_date\": \"2021-09-01\",\n            \"gross_income\": 300,\n            \"num_of_sales\": 0,\n            \"num_of_repairs\": 1\n        }\n    ],\n    [\n        {\n            \"vehicle_type\": \"Car\",\n            \"average_days_in_inventory\": 115.8571\n        },\n        {\n            \"vehicle_type\": \"Convertible\",\n            \"average_days_in_inventory\": 146\n        },\n        {\n            \"vehicle_type\": \"SUV\",\n            \"average_days_in_inventory\": -4\n        },\n        {\n            \"vehicle_type\": \"Truck\",\n            \"average_days_in_inventory\": -6\n        },\n        {\n            \"vehicle_type\": \"Van\",\n            \"average_days_in_inventory\": -5\n        }\n    ],\n    [\n        {\n            \"manufacturerID\": 1,\n            \"manufacturer_name\": \"Acura\",\n            \"num_of_repairs\": 2,\n            \"labor_cost\": 200,\n            \"parts_cost\": 650,\n            \"total_cost\": 850\n        },\n        {\n            \"manufacturerID\": 2,\n            \"manufacturer_name\": \"Alfa Romeo\",\n            \"num_of_repairs\": 1,\n            \"labor_cost\": 120,\n            \"parts_cost\": 0,\n            \"total_cost\": 120\n        },\n        {\n            \"manufacturerID\": 3,\n            \"manufacturer_name\": \"Aston Martin\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        },\n        {\n            \"manufacturerID\": 4,\n            \"manufacturer_name\": \"Audi\",\n            \"num_of_repairs\": 2,\n            \"labor_cost\": 1000,\n            \"parts_cost\": 200,\n            \"total_cost\": 1200\n        },\n        {\n            \"manufacturerID\": 5,\n            \"manufacturer_name\": \"Bentley\",\n            \"num_of_repairs\": 1,\n            \"labor_cost\": 500,\n            \"parts_cost\": 0,\n            \"total_cost\": 500\n        },\n        {\n            \"manufacturerID\": 6,\n            \"manufacturer_name\": \"BMW\",\n            \"num_of_repairs\": 1,\n            \"labor_cost\": 200,\n            \"parts_cost\": 200,\n            \"total_cost\": 400\n        },\n        {\n            \"manufacturerID\": 7,\n            \"manufacturer_name\": \"Buick\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        },\n        {\n            \"manufacturerID\": 8,\n            \"manufacturer_name\": \"Cadillac\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        },\n        {\n            \"manufacturerID\": 9,\n            \"manufacturer_name\": \"Chevrolet\",\n            \"num_of_repairs\": 2,\n            \"labor_cost\": 260,\n            \"parts_cost\": 0,\n            \"total_cost\": 260\n        },\n        {\n            \"manufacturerID\": 10,\n            \"manufacturer_name\": \"Chrysler\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        },\n        {\n            \"manufacturerID\": 11,\n            \"manufacturer_name\": \"Dodge\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        },\n        {\n            \"manufacturerID\": 12,\n            \"manufacturer_name\": \"Ferrari\",\n            \"num_of_repairs\": 2,\n            \"labor_cost\": 550,\n            \"parts_cost\": 0,\n            \"total_cost\": 550\n        },\n        {\n            \"manufacturerID\": 13,\n            \"manufacturer_name\": \"FIAT\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        },\n        {\n            \"manufacturerID\": 14,\n            \"manufacturer_name\": \"Ford\",\n            \"num_of_repairs\": 0,\n            \"labor_cost\": 0,\n            \"parts_cost\": 0,\n            \"total_cost\": 0\n        }\n    ],\n    [\n        {\n            \"salesperson_name\": \"benitokestelman\",\n            \"customer_name\": \"ellaf\",\n            \"vin\": \"14\",\n            \"purchase_date\": \"2020-12-01\",\n            \"invoice_price\": 20000,\n            \"sold_price\": 18000\n        },\n        {\n            \"salesperson_name\": \"laweenpiromari\",\n            \"customer_name\": \"georgef\",\n            \"vin\": \"19\",\n            \"purchase_date\": \"2021-02-01\",\n            \"invoice_price\": 1800000,\n            \"sold_price\": 185000\n        }\n    ],\n    [\n        {\n            \"vendor_name\": \"fancy parts\",\n            \"total_spending\": 400\n        },\n        {\n            \"vendor_name\": \"superb parts\",\n            \"total_spending\": 650\n        }\n    ],\n    [\n        {\n            \"month\": \"2021-11\",\n            \"total_num_sold\": 1,\n            \"total_sales_income\": 50000,\n            \"total_net_income\": 10700,\n            \"sold_invoice_ratio\": 127.226463\n        },\n        {\n            \"month\": \"2021-10\",\n            \"total_num_sold\": 3,\n            \"total_sales_income\": 280000,\n            \"total_net_income\": 25000,\n            \"sold_invoice_ratio\": 109.803922\n        },\n        {\n            \"month\": \"2021-02\",\n            \"total_num_sold\": 3,\n            \"total_sales_income\": 257000,\n            \"total_net_income\": -1603000,\n            \"sold_invoice_ratio\": 13.817204\n        },\n        {\n            \"month\": \"2021-01\",\n            \"total_num_sold\": 3,\n            \"total_sales_income\": 127000,\n            \"total_net_income\": 6800,\n            \"sold_invoice_ratio\": 105.657238\n        },\n        {\n            \"month\": \"2020-12\",\n            \"total_num_sold\": 3,\n            \"total_sales_income\": 108000,\n            \"total_net_income\": 8700,\n            \"sold_invoice_ratio\": 108.761329\n        }\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "Top Customer Sale Drilldown",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerID\":\"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/reports/customer-sale"
+			},
+			"response": [
+				{
+					"name": "Top Customer Sale Drilldown",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerID\":\"6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/reports/customer-sale"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 10:39:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"vin\": \"12\",\n        \"purchase_date\": \"2021-10-01\",\n        \"sold_price\": 200000,\n        \"model_year\": 2019,\n        \"manufacturer_name\": \"Bentley\",\n        \"model_name\": \"Flying Spur\",\n        \"salesperson_name\": \"benitokestelman\"\n    },\n    {\n        \"vin\": \"18\",\n        \"purchase_date\": \"2021-01-01\",\n        \"sold_price\": 42000,\n        \"model_year\": 2019,\n        \"manufacturer_name\": \"Ferrari\",\n        \"model_name\": \"F40\",\n        \"salesperson_name\": \"laweenpiromari\"\n    },\n    {\n        \"vin\": \"14\",\n        \"purchase_date\": \"2020-12-01\",\n        \"sold_price\": 18000,\n        \"model_year\": 2021,\n        \"manufacturer_name\": \"BMW\",\n        \"model_name\": \"X5\",\n        \"salesperson_name\": \"benitokestelman\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Top Customer Repair Drilldown",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerID\":\"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/reports/customer-repair"
+			},
+			"response": [
+				{
+					"name": "Top Customer Repair Drilldown",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerID\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/reports/customer-repair"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:20:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"vin\": \"4\",\n        \"start_date\": \"2021-03-01\",\n        \"finish_date\": \"2021-04-01\",\n        \"odometer\": 10000,\n        \"parts_cost\": 0,\n        \"labor_charge\": 120,\n        \"total_cost\": null,\n        \"service_writer_name\": \"jakemoon\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Monthly Sale Drilldown",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"month\":\"2021-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/reports/monthly-sale"
+			},
+			"response": [
+				{
+					"name": "Monthly Sale Drilldown",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"month\":\"2021-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/reports/monthly-sale"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:27:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"first_name\": \"laween\",\n        \"last_name\": \"piromari\",\n        \"num_sold\": 3,\n        \"total_sales_income\": 127000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Manufacturer Repair Drilldown by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"manufacturerID\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/reports/manufacturer-repair"
+			},
+			"response": [
+				{
+					"name": "Manufacturer Repair Drilldown by ID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"manufacturerID\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/reports/manufacturer-repair"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:31:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"manufacturerID\": 1,\n        \"vehicle_type\": \"Car\",\n        \"num_of_repairs\": 2,\n        \"labor_cost\": 200,\n        \"parts_cost\": 650,\n        \"total_cost\": 850\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Manufacturer Repair Drilldown by ID and Type",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"manufacturerID\":\"1\",\n    \"vehicleType\":\"Car\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/reports/manufacturer-type-repair"
+			},
+			"response": [
+				{
+					"name": "Manufacturer Repair Drilldown by ID and Type",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"manufacturerID\":\"1\",\n    \"vehicleType\":\"Car\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/reports/manufacturer-type-repair"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:33:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"manufacturerID\": 1,\n        \"vehicle_type\": \"Car\",\n        \"model_name\": \"RDX\",\n        \"num_of_repairs\": 2,\n        \"labor_cost\": 200,\n        \"parts_cost\": 650,\n        \"total_cost\": 850\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Individual Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"driverLicense\": \"test-dl\",\n    \"firstName\": \"test-fname\",\n    \"lastName\": \"test-lname\",\n    \"emailAddress\": \"test@test\",\n    \"phoneNumber\": \"test-phonenumber\",\n    \"streetAddress\": \"test street\",\n    \"city\": \"test\",\n    \"state\": \"test\",\n    \"postcode\": \"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/i-customers"
+			},
+			"response": [
+				{
+					"name": "Create Individual Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"driverLicense\": \"test-dl\",\n    \"firstName\": \"test-fname\",\n    \"lastName\": \"test-lname\",\n    \"emailAddress\": \"test@test\",\n    \"phoneNumber\": \"test-phonenumber\",\n    \"streetAddress\": \"test street\",\n    \"city\": \"test\",\n    \"state\": \"test\",\n    \"postcode\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/i-customers"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:52:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Individual customer created successfully."
+				}
+			]
+		},
+		{
+			"name": "Get Individual Customer By DL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/i-customers/test-dl"
+			},
+			"response": [
+				{
+					"name": "Get Individual Customer By DL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/i-customers/test-dl"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:53:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"driverLicense\": \"test-dl\",\n    \"firstName\": \"test-fname\",\n    \"lastName\": \"test-lname\",\n    \"emailAddress\": \"test@test\",\n    \"phoneNumber\": \"test-phonenumber\",\n    \"streetAddress\": \"test street\",\n    \"city\": \"test\",\n    \"state\": \"test\",\n    \"postcode\": \"test\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Business Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tin\":\"test-tin\",\n    \"businessName\":\"test-businessName\",\n    \"primaryContactName\":\"test-primary-contact-name\",\n    \"primaryContactTitle\":\"test-primary-contact-title\",\n    \"emailAddress\":\"test@test\",\n    \"phoneNumber\":\"test\",\n    \"streetAddress\":\"test\",\n    \"city\":\"test\",\n    \"state\":\"test\",\n    \"postcode\":\"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/b-customers"
+			},
+			"response": [
+				{
+					"name": "Create Business Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tin\":\"test-tin\",\n    \"businessName\":\"test-businessName\",\n    \"primaryContactName\":\"test-primary-contact-name\",\n    \"primaryContactTitle\":\"test-primary-contact-title\",\n    \"emailAddress\":\"test@test\",\n    \"phoneNumber\":\"test\",\n    \"streetAddress\":\"test\",\n    \"city\":\"test\",\n    \"state\":\"test\",\n    \"postcode\":\"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/b-customers"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:57:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "business customer created successfully"
+				}
+			]
+		},
+		{
+			"name": "Get Business Customer By Tin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/b-customers/test-tin"
+			},
+			"response": [
+				{
+					"name": "Get Business Customer By Tin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/b-customers/test-tin"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 11:58:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tin\": \"test-tin\",\n    \"businessName\": \"test-businessName\",\n    \"primaryContactName\": \"test-primary-contact-name\",\n    \"primaryContactTitle\": \"test-primary-contact-title\",\n    \"emailAddress\": \"test@test\",\n    \"phoneNumber\": \"test\",\n    \"streetAddress\": \"test\",\n    \"city\": \"test\",\n    \"state\": \"test\",\n    \"postcode\": \"test\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Customer System ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"test-tin\",\n    \"type\":\"business\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/customers"
+			},
+			"response": [
+				{
+					"name": "Get Customer System ID - Individual",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/customers"
+					},
+					"status": "Found",
+					"code": 302,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 12:00:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "1b0fbaeb-f2ad-42a0-b078-bb50b5de1376"
+				},
+				{
+					"name": "Get Customer System ID - Business",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/customers"
+					},
+					"status": "Found",
+					"code": 302,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 12:01:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "67fcd1ce-467c-41ab-867a-927b187971b2"
+				}
+			]
+		},
+		{
+			"name": "Create Sale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"lp\",\n    \"vin\": \"2\",\n    \"customerID\": \"1\",\n    \"soldPrice\": \"50000.00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/sale"
+			},
+			"response": [
+				{
+					"name": "Create Sale",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"lp\",\n    \"vin\": \"2\",\n    \"customerID\": \"1\",\n    \"soldPrice\": \"50000.00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/sale"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 12:04:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "sale created successfully"
+				}
+			]
+		},
+		{
+			"name": "Get Sale By Vin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/sale/2"
+			},
+			"response": [
+				{
+					"name": "Get Sale By Vin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/sale/2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Nov 2021 12:06:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"lp\",\n    \"vin\": \"2\",\n    \"customerID\": \"1\",\n    \"purchaseDate\": \"2021-11-20\",\n    \"soldPrice\": 50000\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Unsold Vehicle Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/unsold-vehicle-count"
+			},
+			"response": [
+				{
+					"name": "Get Unsold Vehicle Count",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/unsold-vehicle-count"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 21 Nov 2021 02:23:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "8"
+				}
+			]
+		},
+		{
+			"name": "Create Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"car123\",\r\n  \"modelYear\": \"2020\",\r\n  \"modelName\": \"A440\",\r\n  \"manufacturerName\": \"Audi\",\r\n  \"color\": [\r\n    \"Aluminum\",\r\n    \"Beige\"\r\n  ],\r\n  \"invoicePrice\": \"50000\",\r\n  \"vehicleType\": \"Car\",\r\n  \"description\": \"Smooth ride\",\r\n  \"username\": \"user03\",\r\n  \"numDoors\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/car",
+				"description": "Create car"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Convertible",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"conv123\",\r\n  \"modelYear\": \"2021\",\r\n  \"modelName\": \"Cool Cruiser\",\r\n  \"manufacturerName\": \"Cadillac\",\r\n  \"color\": [\r\n    \"Aluminum\",\r\n    \"Black\",\r\n    \"Gold\",\r\n    \"Pink\",\r\n    \"Purple\",\r\n    \"Rose\",\r\n    \"Turquoise\"\r\n  ],\r\n  \"invoicePrice\": \"75000\",\r\n  \"vehicleType\": \"Convertible\",\r\n  \"description\": \"Make your wife's boyfriend jealous\",\r\n  \"username\": \"roland\",\r\n  \"roofType\": \"Hard-top\",\r\n  \"backseatCount\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/convertible"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Truck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"truck123\",\r\n  \"modelYear\": \"2019\",\r\n  \"modelName\": \"Big Truck\",\r\n  \"manufacturerName\": \"GMC\",\r\n  \"color\": [\r\n    \"White\"\r\n  ],\r\n  \"invoicePrice\": \"45000\",\r\n  \"vehicleType\": \"Truck\",\r\n  \"description\": \"\",\r\n  \"username\": \"user03\",\r\n  \"cargoCoverType\": \"Heavy duty\",\r\n  \"numRearAxles\": \"2\",\r\n  \"cargoCapacity\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/truck"
+			},
+			"response": []
+		},
+		{
+			"name": "Create SUV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"suv123\",\r\n  \"modelYear\": \"2018\",\r\n  \"modelName\": \"Pilot\",\r\n  \"manufacturerName\": \"Honda\",\r\n  \"color\": [\r\n    \"Black\",\r\n    \"Blue\",\r\n    \"Gray\",\r\n    \"Green\",\r\n    \"Metallic\",\r\n    \"Purple\",\r\n    \"Red\",\r\n    \"Silver\",\r\n    \"White\"\r\n  ],\r\n  \"invoicePrice\": \"35000\",\r\n  \"vehicleType\": \"SUV\",\r\n  \"description\": \"\",\r\n  \"username\": \"user03\",\r\n  \"drivetrainType\": \"AWD\",\r\n  \"numCupholders\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/suv"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Van",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"van123\",\r\n  \"modelYear\": \"2018\",\r\n  \"modelName\": \"Aerostar\",\r\n  \"manufacturerName\": \"Ford\",\r\n  \"color\": [\r\n    \"Black\",\r\n    \"Blue\"\r\n  ],\r\n  \"invoicePrice\": \"6000\",\r\n  \"vehicleType\": \"Van\",\r\n  \"description\": \"\",\r\n  \"username\": \"user03\",\r\n  \"hasDriversideBackdoor\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/van"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Repairs By Vin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/repair/00AIVKIDO01487633"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Repair",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vin\": \"00AIVKIDO01487633\",\r\n  \"username\" : \"user33\",\r\n  \"customerID\": \"B0490229322\",\r\n  \"odometer\": \"12345\",\r\n  \"description\": \"Test repair\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/repair/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Repair Labor Charge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vin\":\"00AIVKIDO01487633\",\r\n    \"startDate\":\"2021-11-28\",\r\n    \"price\":\"100.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/repair/update-labor-charge"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Part To Repair",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vin\":\"00AIVKIDO01487633\",\r\n    \"startDate\":\"2021-11-28\",\r\n    \"partNumber\":\"TP-BAED0025\",\r\n    \"vendorName\":\"Plexzap\",\r\n    \"quantity\":\"4\",\r\n    \"price\":\"155.32\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/repair/add-part"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Active Repairs By Vin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/active-repair/00AIVKIDO01487633"
+			},
+			"response": []
+		},
+		{
+			"name": "Finish Repair",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vin\":\"00AIVKIDO01487633\",\r\n    \"startDate\":\"2021-11-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/finish-repair"
+			},
+			"response": []
+		}
+	]
+}

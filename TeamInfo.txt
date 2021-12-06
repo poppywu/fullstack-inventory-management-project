@@ -1,0 +1,7 @@
+Schema in:
+sql/buildSchema.sql
+Demo data loaded in:
+sql/dataMocks.sql
+
+SQL Queries in:
+\backend\src\main\java\cs6400\team82\jauntyjalopiesbackend\dao

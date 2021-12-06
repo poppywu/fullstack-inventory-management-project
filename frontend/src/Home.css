@@ -1,0 +1,77 @@
+.header {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: lemonchiffon;
+}
+.login__greeting {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.email__input {
+    margin-right: 2%;
+}
+.password__input {
+    margin-right: 2%;
+}
+.search__section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: aliceblue;
+    opacity: 0.66;
+}
+.search__input {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.radio__group {
+    margin-bottom: 3%;
+}
+.select__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.search__input__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.App {
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #12c2e9, #c471ed, #f64f59);
+    animation: change 7s ease-in-out infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

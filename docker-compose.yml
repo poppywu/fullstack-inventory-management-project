@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  mysql:
+    build: ./sql
+    command: --local-infile --secure-file-priv=""
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: jaunty_jalopies
+  react:
+    build: ./frontend
+    ports:
+      - 3000:3000
+    command: npm start
+  spring:
+    build: ./backend
+    ports:
+      - 8080:8080
+    command: ./mvnw spring-boot:run
+    depends_on:
+      - "mysql"
